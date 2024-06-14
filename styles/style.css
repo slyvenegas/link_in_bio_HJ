@@ -1,0 +1,116 @@
+:root {
+  --fontPrimary: "PT Sans", sans-serif;
+  --fontSecondary: "IBM Plex Mono", monospace;
+
+  --blue: #92bfdd;
+  --blueFort: #0975b8;
+  --grey: #bcbabae1;
+  --white: #fff;
+  --black: #000;
+  --orange: #f5cc8d;
+  --orange2: #d35400;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: var(--fontPrimary);
+  font-size: 1.6rem;
+  line-height: 2;
+  text-align: center;
+}
+
+.widget-label a {
+  display: block;
+  margin-bottom: 1rem;
+  padding: 1.5rem;
+  text-align: center;
+  margin: 2rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+}
+
+.description {
+  font-family: var(--fontSecondary);
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.image .img {
+  display: block;
+  margin: auto;
+  max-width: 150px;
+  border-radius: 50%;
+  padding: 1rem;
+}
+
+.blue {
+  background-color: var(--blue);
+  color: var(--blueFort);
+}
+
+.orange {
+  background-color: var(--orange);
+  color: var(--orange2);
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 1.5rem;
+  width: 100%;
+}
+
+@media (min-width: 1024px) {
+  .widget-label a {
+    padding: 0.6rem;
+    font-size: 2rem;
+  }
+
+  .title {
+    font-size: 4rem;
+  }
+
+  .description {
+    font-size: 2rem;
+  }
+
+  .image .img {
+    max-width: 280px;
+  }
+
+  .footer {
+    position: relative;
+  }
+
+
+
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+.social-icons a {
+  text-decoration: none;
+  color: var(--orange2);
+}
+.social-icons i {
+  font-size: 20px;
+}
+.social-icons img {
+  width: 20px;
+  height: 20px;
+}
